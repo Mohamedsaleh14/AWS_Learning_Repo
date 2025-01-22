@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Template to create a simple S3 bucket'
+
+Resources:
+  MyS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    # We don't need to supply a bucket name; AWS does that for us.
+    # Properties:
+    #   BucketName: my-unique-bucket-name-123
