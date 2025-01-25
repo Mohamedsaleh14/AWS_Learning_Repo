@@ -76,5 +76,11 @@ To confirm everything is set up correctly:
   ```bash
   aws s3 ls [Tab]
   ```
+## **6. Correct way to store Access keys**
+
+Use the following command to save the credentials safely in TOML file format in ~/.aws/credentials
+```bash
+aws configure
+```
 
 ---
