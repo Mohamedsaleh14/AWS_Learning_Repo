@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+      .playwrite-in-unique {
+        font-family: "Playwrite IN", serif;
+        font-optical-sizing: auto;
+        font-weight: 300; /* Example weight within 100 to 400 */
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="playwrite-in-unique">
+      <h1>Welcome to My Website</h1>  
+      <p>What do you think of my Website</p>
+    </main>
+    <script type="text/javascript">
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://hwomsfdof9.execute-api.us-west-2.amazonaws.com/Prod/hello", true);
+
+        // Send the proper header information along with the request
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = () => {
+        // Call a function when the state changes.
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            const results = JSON.parse(xhr.responseText)
+            console.log('results', results)
+        }
+        };
+        xhr.send();
+        // xhr.send(new Int8Array());
+        // xhr.send(document);
+    </script>
+  </body>
+</html>
