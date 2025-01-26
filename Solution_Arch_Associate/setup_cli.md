@@ -82,5 +82,14 @@ Use the following command to save the credentials safely in TOML file format in 
 ```bash
 aws configure
 ```
+You can also add a different profile for Access key and secret using the following cmd. Provide the PROFILE_NAME you want to add.
+```bash
+aws configure --profile $PROFILE_NAME
+```
+## **7. Configuration files**
+
+Use the following configuration files
+- `~/.aws/credentials`: Used to store credentials e.g., AWS Access Key and Secret, that basicly they will be updated using cmd `aws configure`
+- `~/.aws/config`: Used to store prefered region and prefered output formate
 
 ---
