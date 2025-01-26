@@ -37,3 +37,4 @@ override.tf.json
 terraform.rc
 
 Solution_Arch_Associate/s3/IaC/Terraform/.terraform.lock.hcl
+Solution_Arch_Associate/api/sts/temp.txt
