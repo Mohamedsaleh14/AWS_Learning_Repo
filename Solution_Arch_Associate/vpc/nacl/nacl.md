@@ -24,6 +24,8 @@ aws ec2 create-network-acl-entry \
 --rule-action deny
 ```
 
+Note: Missing Allow inbound and outbound traffic configuration, had to add it directly in the console. But this example should be enough for understanding how to configure NACLs
+
 ## Get AMI for Amazon Linux 2
 
 Grab the latest AMI2 Linux 2 ID in order to put the AMI in the template yaml file
