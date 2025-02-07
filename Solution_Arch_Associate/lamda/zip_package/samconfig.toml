@@ -1,0 +1,7 @@
+version=0.1
+[default.deploy.package]
+s3_bucket = "lambda-example-packaged-python"
+region = "eu-central-1"
+[default.deploy.parameters]
+s3_bucket = "lambda-example-packaged-python"
+region = "eu-central-1"
